@@ -1,0 +1,23 @@
+{
+  "vision_width": 768,
+  "patch_size": 16,
+  "hidden_act": "quick_gelu",
+  "num_attention_heads": 12,
+  "attention_dropout": 0.0,
+  "intermediate_size": 3072,
+  "num_hidden_layers": 12,
+  "gradient_checkpointing": false,
+  "drop_path_rate": 0.1,
+  "vocab_size": 64000,
+  "vision_vocab_size": 8192,
+  "relative_position_embed": false,
+  "ffn_type": "moe",
+  "vlffn_layers": [10,11],
+  "moeffn_layers": [10,11],
+  "moe_param": {
+    "num_experts": 32,
+    "topk": 2,
+    "type_route": true
+  },
+  "moe_lossweight": 0.001
+}

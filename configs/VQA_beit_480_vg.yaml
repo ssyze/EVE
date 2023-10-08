@@ -1,0 +1,31 @@
+train_file: ['data/finetune/vqa_train_filter.json',
+             'data/finetune/vqa_val_filter.json'] # change this to your vqa image root
+             
+test_file: ['data/finetune/vqa_test.json']
+answer_list: 'data/finetune/answer_list.json'
+
+vqa_root: 'images/coco/'
+vg_root: 'images/visualgenome/'
+
+## VLMO
+vlmo_config: 'configs/config_vlmoB_base64k.json'
+
+image_res: 480
+patch_size: 16
+
+## Text Encoder
+use_roberta: False
+text_encoder: 'data/bert-base-uncased'  # ['data/bert-base-uncased', 'data/roberta-base']
+
+
+## Training
+batch_size_train: 16
+batch_size_test: 32
+max_tokens: 40
+
+
+## Other Settings
+optimizer: {opt: adamW, lr: 3e-5, weight_decay: 0.01, lr_mult: 10}
+schedular: {sched: linear, lr: 3e-5, epochs: 10, num_warmup_steps: 0.1}
+accelerator: {SYNCBN: false, FP16_OPT_LEVEL: O0, FP16_LOSS_SCALE: null, RNG_SEED: 42, GRAD_ACCUMULATE_STEPS: 1, CLIP_GRAD_NORM: 3.0}
+start_eval: 8  # epoch index

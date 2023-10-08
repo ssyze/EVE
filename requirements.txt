@@ -1,0 +1,16 @@
+sentencepiece
+einops
+fairscale
+timm==0.4.9
+datasets==1.15.1
+pycocoevalcap==1.2
+transformers==4.12.5
+ftfy==6.1.1
+opencv-python==4.6.0.66
+scikit-image==0.19.3
+matplotlib==3.5.3
+fairscale==0.4.6
+einops==0.6.0
+pycocotools==2.0.6
+ruamel_yaml==0.17.21
+pytorch==1.21.1

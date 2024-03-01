@@ -2,6 +2,8 @@
 
 [EVE: Efficient Vision-Language Pre-training with Masked Prediction and Modality-Aware MoE](https://arxiv.org/abs/2308.11971)
 
+EVE is accepted by AAAI 2024.
+
 Release preprint in [arxiv](https://arxiv.org/abs/2308.11971).
 
 Release pre-trained weight and fine-tuning code.
@@ -89,7 +91,7 @@ Use --biattn to enbale bi-attention module.
 # Citation
 If you find this repository useful, please considering giving ⭐ or citing:
 ```
-@article{eve,
+@article{EVE,
   author    = {Junyi Chen and Longteng Guo and Jia Sun and Shuai Shao and Zehuan Yuan and Liang Lin and Dongyu Zhang},
   title     = {EVE: Efficient Vision-Language Pre-training with Masked Prediction and Modality-Aware MoE},
   journal   = {arXiv preprint arXiv:2308.11971},
